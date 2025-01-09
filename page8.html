@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            span{
+                font-family: DFKai-sb;
+                color: white;
+            }
+            div{
+                position: absolute;
+                width: 50vw;
+                height: 100vh;
+                left: 25vw;
+                top: 0px;
+                text-align: center;
+                word-wrap: break-word;
+            }
+            #aaa{
+                font-size: medium;
+            }
+            #aaa span{
+                font-size: xx-large !important;
+            }
+            a{
+                position: fixed;
+                font-size: large;
+                top: 75vh;
+                transition: all 300ms ease-in-out;
+                color: blue;
+            }
+            a:hover, a:visited, a:link, a:active {
+                text-decoration: none;
+                color: blue;
+            }
+            a:hover{
+                color: aqua !important;
+            }
+            #la{
+                left: 20vw;
+            }
+            #ne{
+                left: 75vw;
+            }
+        </style>
+    </head>
+    <body bgcolor="black">
+        <div>
+            <span id="aaa">
+                <br><br><br><br><br>
+                <span>
+                    二、製作步驟
+                </span>
+                <br><br>
+                1、 c=Circle(A, r)(隱藏)。<br>
+                2、 在圓上設一個點B。<br>
+                3、 B&apos;設為Rotate(B, -W, A)。<br>
+                4、 接下來設三個數值滑桿分別是colorR、colorG、colorB。<br>
+                5、 設一個數值滑桿mirror(0,1)、inner(0,1)。<br>
+                6、 B&apos;<sub>1</sub>設為Rotate(B,&alpha;,A)。<br>
+                7、 B&quot;設為Rotate(B,&alpha;+W,A)。<br>
+                8、 用圓弧工具做loding圖案CircularArc(A,B&quot;,B&quot;<sub>1</sub>)。<br>
+                9、 B&quot;<sub>2</sub>設為Rotate(B,-&alpha;,A)。<br>
+                10、 B&quot;<sub>1</sub>設為Rotate(B,-&alpha;-W,A)。<br>
+                11、 圓弧工具CircularArc(A,B&quot;<sub>1</sub>,B&quot;<sub>2</sub>)再進階那邊顯示物件條件打上mirror≟1。<br>
+                12、 設C=Midpoint( B&apos;<sub>1</sub>,A)、設B=Midpoint(B&quot;,A)、設E=Midpoint(B&quot;<sub>1</sub>,A)、設F=Midpoint(B&apos;<sub>2</sub>,A)。<br>
+                13、 設C&apos;=Reflect(C,A)、設B&apos;=Reflect(B,A)、設E&apos;=Reflect(E,A)、設F&apos;=Reflect(C,A)。<br>
+                14、 設f=CircularArc(A,D&apos;,C&apos;)再進階那邊顯示物件條件打上mirror+inner≟2。<br>
+                15、 設g=CircularArc(A,E&apos;,F&apos;)再進階那邊顯示物件條件打上inner≟1。<br>
+                16、 h=Circle(A,r/2.1)(隱藏)。<br>
+                17、 設數值滑桿graph(0,1)、n[0,&infin;)、direct(-1,0,1)、fill(0,1)、graphcolor(0,1)<br>
+                18、 設一個點G=Intersect(h,y軸,2),G&apos;=Rotate(G,(360/n)&deg;,A)。<br>
+                19、 poly1=Polygon(G,G&apos;,n)(隱藏)。<br>
+                20、 poly&apos;=Rotate(poly1,direct&alpha;,A)。<br>
+                21、 poly&apos;在進階色彩那邊填入color(R)(G)(B)-graphcolor、填滿填入fill。<br>
+                22、 d,e進階(動態色彩)那邊填入color(R)(G)(B)。<br>
+                23、 f,g進階(動態色彩)那邊填入color(R)(G)(B)-colorDEV。<br>
+            </span>
+        </div>
+        <a href="page7.html" id="la">
+            previous page
+        </a>
+        <a href="page9.html" id="ne">
+            next page
+        </a>
+    </body>
+</html>

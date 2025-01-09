@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            span{
+                font-family: DFKai-sb;
+            }
+            #start{
+                position: absolute;
+                left: 40vw;
+                top: 40vh;
+                width: 20vw;
+                height: 20vh;
+                border: 1px white solid;
+                background-color: black;
+                text-align: center;
+                border-radius: 20px;
+                transition: all 300ms ease-in-out;
+            }
+            #start:hover{
+                background-color: aqua;
+            }
+            #start span{
+                font-size: 15vh;
+                color: white;
+                transition: all 300ms ease-in-out;
+            }
+            #start:hover span{
+                color: deeppink;
+            }
+        </style>
+    </head>
+    <body bgcolor="black">
+        <div id="start" onclick="javascript: start()">
+            <span>
+                開始
+            </span>
+        </div>
+        <script>
+            function start(){
+                location.href="page1.html";
+            }
+        </script>
+    </body>
+</html>
